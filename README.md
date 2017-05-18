@@ -1,5 +1,6 @@
 # 集成及JS API
-··· js
+
+``` js
 <video  id="pearvideo" controls="controls" autoplay="autoplay" ></video>
 <script src="PearPlayer.js"></script>
 <script>
@@ -10,4 +11,4 @@
         token: token
     });
 </script>
-···
+```
