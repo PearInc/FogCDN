@@ -1,5 +1,5 @@
 # 集成及JS API
-··· javascript
+··· js
 <video  id="pearvideo" controls="controls" autoplay="autoplay" ></video>
 <script src="PearPlayer.js"></script>
 <script>
