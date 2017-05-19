@@ -39,6 +39,6 @@ FogVDN，是Pear（梨享计算）出品的一个面向未来、专注于服务�
 
 ## 海量可长时间稳定提供服务的节点
 
-![节点架构](fig/pear-fog-node-engine.pdf)
+![节点架构](fig/pear-fog-node-engine.png)
 
 
