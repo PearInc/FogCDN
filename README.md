@@ -22,9 +22,9 @@
 
 ### 众包
 
-    拥有海量可长时间稳定提供服务的节点。绝大部分带宽和存储收集自普通用户稳定在线的边缘网关设备，如智能路由器、NAS等。
+拥有海量可长时间稳定提供服务的节点。绝大部分带宽和存储收集自普通用户稳定在线的边缘网关设备，如智能路由器、NAS等。
     
-    ![节点架构](fig/pear-fog-node-engine.png)
+![节点架构](fig/pear-fog-node-engine.png)
 
 ### 开放的、国际标准的协议，如：
   + HTTP2
@@ -34,15 +34,15 @@
   
 ### Web友好，“连接一切”
 
-    ![播放器](fig/PearPlayer.png)
+![播放器](fig/PearPlayer.png)
 
 ### 高效率，在VoD、Live、VoIP等场景中均有专门优化的定制算法
 
 ### 安全可靠
 
-    * HTTP通道全部切换到HTTPS通道
-    * WebRTC通道传输数据使用SCTP协议和TLS加密来保护的
-    * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
+* HTTP通道全部切换到HTTPS通道
+* WebRTC通道传输数据使用SCTP协议和TLS加密来保护的
+* 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
 
 
 
