@@ -22,6 +22,7 @@
 * WebRTC通道传输数据使用SCTP协议和TLS加密来保护的
 * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
 
+
 ## 海量可长时间稳定提供服务的节点
 
 ![节点架构](pics/node.png)
