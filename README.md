@@ -21,3 +21,5 @@
 * HTTP通道全部切换到HTTPS通道
 * WebRTC通道传输数据使用SCTP协议和TLS加密来保护的
 * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
+
+
