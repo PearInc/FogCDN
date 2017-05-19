@@ -23,3 +23,6 @@
 * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
 
 
+![主动更新视频序列图](pics/node.png)
+
+
