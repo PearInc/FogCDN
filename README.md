@@ -26,7 +26,7 @@
     
 ![节点架构](fig/pear-fog-node-engine.png)
 
-### 开放的、国际标准的协议，如：
+### 支持开放的、国际标准的协议，如：
   + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
   + [WebRTC](https://webrtc.org/)
   + [HLS](https://developer.apple.com/streaming/)
@@ -41,8 +41,8 @@
 ### 安全可靠
 
 * HTTP通道全部切换到HTTPS通道
-* WebRTC通道传输数据使用SCTP协议和TLS加密来保护的
-* 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS加密。
+* WebRTC通道传输数据使用SCTP协议和TLS加密来保护
+* 信令通信是通过安全的WebSocket完成的，该WebSocket也使用DTLS加密
 
 
 
