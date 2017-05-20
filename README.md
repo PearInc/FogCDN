@@ -29,8 +29,8 @@
 ### 开放的、国际标准的协议，如：
   + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
   + [WebRTC](https://webrtc.org/)
-  + HLS
-  + DASH
+  + [HLS](https://developer.apple.com/streaming/)
+  + [DASH](http://mpeg.chiariglione.org/standards/mpeg-dash)
   
 ### Web友好，“连接一切”
 
