@@ -8,11 +8,11 @@
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
 ``` js
-<video  id="pearvideo" controls="controls" autoplay="autoplay" ></video>
+<video  id="v1"></video>
 <script src="PearPlayer.js"></script>
 <script>
     var PearPlayer = require('PearPlayer');
-    PearPlayer('#pearvideo',{
+    PearPlayer('#v1',{
         type: 'mp4',
         src: 'https://xxx.webrtc.win/tv/f.mp4',
         token: token
@@ -27,8 +27,8 @@
 ![节点架构](fig/pear-fog-node-engine.png)
 
 ### 开放的、国际标准的协议，如：
-  + HTTP2
-  + WebRTC
+  + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
+  + [WebRTC](https://webrtc.org/)
   + HLS
   + DASH
   
