@@ -1,6 +1,6 @@
 ## FogVDN - The Video CDN in the Fog with Crowdsourcing
 
-`FogVDN`，是Pear（梨享）出品的一个面向未来、专注于服务在线视频流媒体的CDN。它是Pear Fog（梨享雾计算）平台的重要组成部分，具有以下特色：
+  Pear（梨享）出品的一个面向未来、专注于服务在线视频流媒体的CDN。它是Pear Fog（梨享雾计算）平台的重要组成部分，具有以下特色：
 
 ### 集成方便，CP或CDN均可“一键启用”
 
@@ -8,7 +8,7 @@
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
 ``` js
-<video  id="v1"></video>
+<video id="v1"></video>
 <script src="PearPlayer.js"></script>
 <script>
     var PearPlayer = require('PearPlayer');
