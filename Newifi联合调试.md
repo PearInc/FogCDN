@@ -32,7 +32,7 @@
    ![节点架构](fig/api_sequence.png)
    
    
- # Pear提供API说明
+ # Pear提供API说明 (目前Newifi平台的Mac都统计到name: newifi2 password: 123456帐号)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
@@ -58,7 +58,7 @@ echo "Begin get traffic by Mac & token"
 r=`curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
   -H "Content-Type:application/json" \
   -d '{
-    "user_name": "pear",
+    "user_name": "newifi2",
     "password":  "123456"
    }'`
 echo "-----------------------------------------------------------" -n
