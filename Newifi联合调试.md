@@ -105,13 +105,41 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
    
       ![Push](fig/node_cache.png)
       
-   3.  查看流量
+   3.  由于内容是基于热度分发的，所以要增加访问热度，来增加分发次数
    
-    3.1 通过NMS系统登录查询
+      3.1   CP厂商提供访问热度
+      
+      3.2   通过脚本提高访问热度
+
+```
+#/bin/sh
+# Pear Limited
+
+files=('/tv/pear.mp4')
+r=`curl  -X POST https://api.webrtc.win:6601/v1/customer/login \
+  -H "Content-Type:application/json" \
+  -d '{
+    "user": "admin",
+    "password":  "123456"
+   }'`
+token=`echo $r | cut -d "\"" -f4 `
+echo $token
+for file in ${files[@]}  
+do  
+    curl -v -X GET "https://api.webrtc.win:6601/v1/customer/nodes?client_ip=127.0.0.1&host=qq.webrtc.win&uri=${file}&md5=ab340d4befcf324a0a1466c166c10d1d" \
+        -H "X-Pear-Token: ${token}" \
+        -H "Content-Type:application/json" 
+done  
+exit 0
+```
+     
+   4.  查看流量
+   
+    4.1 通过NMS系统登录查询
        
     ![Push](fig/node_traffic.png)
     
-    3.2 通过API查询
+    4.2 通过API查询
     
 ``` shell
     curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
