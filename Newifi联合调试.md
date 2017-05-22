@@ -41,8 +41,26 @@
 
  ```
  2. 获取一定时间段内的流量（包括多个Mac）
- ```
+ ``` shell
  curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
+  -H "X-Pear-Token: ${token}" \
+  -H "Content-Type:application/json" 
+ ```
+ 3. 完整的shell脚本如下（可以直接运行）
+ ``` shell
+ #/bin/sh
+# Pear Limited
+echo "Begin get traffic by Mac & token"
+
+r=`curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
+  -H "Content-Type:application/json" \
+  -d '{
+    "user_name": "pear",
+    "password":  "123456"
+   }'`
+echo "-----------------------------------------------------------" -n
+token=`echo $r | cut -d "\"" -f14 `
+curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
   -H "X-Pear-Token: ${token}" \
   -H "Content-Type:application/json" 
  ```
