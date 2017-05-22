@@ -3,11 +3,11 @@
 > 负责监控pear_software中所有程序的健康运行
 
 2. pear_monitor终端监控程序
->  获取PLATFORM平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
->  配置nginx，包括动态申请http端口，和https端口
->  五秒定时检查外接设备（U盘或者移动硬盘）是否移除
->  五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
->  三十分钟定时执行测速和远程升级的功能
+*  获取PLATFORM平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
+*  配置nginx，包括动态申请http端口，和https端口
+*  五秒定时检查外接设备（U盘或者移动硬盘）是否移除
+*  五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
+*  三十分钟定时执行测速和远程升级的功能
 
 3. pear_nginx（暂缺）
 >  提供http/https(tcp)数据传输通道 
@@ -17,8 +17,8 @@
 
 
 # 关于缓存存储空间的说明
->  pear_monitor定时检测外接硬盘设备，永远选择容量最大的设备分区，目前配置为需要10G以上的缓存空间（不满足条件，pear_monitor程序不能正常工作）
->  缓存空间 = 硬盘可用空间 + 硬盘已用缓存空间（pear缓存文件占用的空间）
+*  pear_monitor定时检测外接硬盘设备，永远选择容量最大的设备分区，目前配置为需要10G以上的缓存空间（不满足条件，pear_monitor程序不能正常工作）
+*  缓存空间 = 硬盘可用空间 + 硬盘已用缓存空间（pear缓存文件占用的空间）
  
  
 # 需硬件载体方集成事宜及API
@@ -154,9 +154,9 @@ exit 0
    
      
 # 手动安装pear程序
-> 获取pear_software.tar.gz安装包
-> tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
-> 配置开机启动pear_restart即可
-> pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动pear程序集
+* 获取pear_software.tar.gz安装包
+* tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
+* 配置开机启动pear_restart即可
+* pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动pear程序集
 
 
