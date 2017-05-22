@@ -36,18 +36,18 @@
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
-  -H "Content-Type:application/json" \
-  -d '{
-    "user_name": "newifi2",
-    "password":  "123456"
-   }'
+       -H "Content-Type:application/json" \
+       -d '{
+              "user_name": "newifi2",
+              "password":  "123456"
+           }'
 
  ```
  2. 获取一定时间段内的流量（包括多个Mac）
  ``` shell
  curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
-  -H "X-Pear-Token: ${token}" \
-  -H "Content-Type:application/json" 
+      -H "X-Pear-Token: ${token}" \
+      -H "Content-Type:application/json" 
  ```
  
   ![traffic](fig/get_traffic_data.png)
@@ -57,19 +57,19 @@
 #/bin/sh
 # Pear Limited
 r=`curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
-  -H "Content-Type:application/json" \
-  -d '{
-    "user_name": "newifi2",
-    "password":  "123456"
-   }'`
+         -H "Content-Type:application/json" \
+         -d '{
+                "user_name": "newifi2",
+                "password":  "123456"
+             }'`
 user_id=`echo $r | cut -d ":" -f2 | cut -d "," -f1`
 user_id="${user_id// /}"
 echo $user_id;
 token=`echo $r | cut -d "\"" -f14 `
 #echo ${token}
 curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?start_date=1494780990&end_date=1496443900" \ 
-  -H "X-Pear-Token: ${token}" \
-  -H "Content-Type:application/json" 
+     -H "X-Pear-Token: ${token}" \
+     -H "Content-Type:application/json" 
  ```
  
  
