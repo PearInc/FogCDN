@@ -1,6 +1,9 @@
 # Pear程序说明
+0. 特殊说明
+*  Pear程序具备root权限，Pear程序统一放在/usr/sbin目录中
 1. pear_restart死活程序
-* 负责监控pear_software中所有程序的健康运行
+*  负责监控其他Pear程序的健康运行
+*  通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
 
 2. pear_monitor终端监控程序
 *  获取PLATFORM平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
@@ -9,11 +12,14 @@
 *  五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
 *  三十分钟定时执行测速和远程升级的功能
 
-3. pear_datachannel
+3. pear_datachannel数据通道程序
 *  提供webrtc datachannel(udp)数据传输通道 
 
-4. pear_nginx（暂缺）
+4. pear_nginx（暂时使用内置nginx程序，后期加入）
 *  提供http/https(tcp)数据传输通道 
+
+5. 其他Pear程序（后期加入）
+*  后续会直接通过远程升级的方式增加，以保证服务的稳定和持续增值的能力
 
 
 # 缓存空间配置说明
