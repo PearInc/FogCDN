@@ -112,12 +112,12 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
     ![Push](fig/node_traffic.png)
     
     3.2 通过API查询
-    ---
-    ``` shell
+    
+``` shell
     curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
      -H "X-Pear-Token: ${token}" \
      -H "Content-Type:application/json" 
-    ```
+```
    
      
      
