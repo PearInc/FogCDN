@@ -78,19 +78,18 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
    
     ![用户注册](fig/sign_in.png)
     
-##  2. https://nms.webrtc.win/node-info/index  注册完成或者登录后进入下面界面：分别输入序列号和Mac地址(尤其Mac地址不能输入错误，后面业务逻辑都会与此关联)
-
+##  2. 手动绑定设备(https://nms.webrtc.win/node-info/index)
    
     ![手动绑定](fig/hand_bind.png)
    
    
-##  3. 通过微信绑定
+##  3. 微信绑定设备(后期制作二维码贴在设备上)
      
      ![微信绑定](fig/wechat_bind.png)
      
     
-##  4. 查看绑定设备的Mac、SN等
-    
+##  4. 查看绑定设备的关键信息
+    
      ![设备基本信息](fig/user_info.png)
      
      
@@ -99,17 +98,17 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
      ![设备基本信息](fig/node_stat.png)
      
      
- #  内容分发流程
+ #  四. 内容分发流程
  
-   1.  CP厂商通过后台推送新的视频文件
+##  1. CP厂商通过后台推送新的视频文件
    
       ![Push](fig/cp_push.png)
       
-   2.  文件先从源站缓存在我们内部cache服务器，然后分发到各个节点，之后可以看到节点缓存的文件信息
+##  2.  文件先从源站缓存在我们内部cache服务器，然后分发到各个节点，之后可以看到节点缓存的文件信息
    
       ![Push](fig/node_cache.png)
       
-   3.  由于内容是基于热度分发的，所以要增加访问热度，来增加分发次数
+##  3.  由于内容是基于热度分发的，所以要增加访问热度，来增加分发次数
    
       3.1   CP厂商提供访问热度
       
@@ -121,23 +120,24 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
 
 files=('/tv/pear.mp4')
 r=`curl  -X POST https://api.webrtc.win:6601/v1/customer/login \
-  -H "Content-Type:application/json" \
-  -d '{
-    "user": "admin",
-    "password":  "123456"
-   }'`
+         -H "Content-Type:application/json" \
+         -d '{
+                "user": "admin",
+                "password":  "123456"
+             }'`
 token=`echo $r | cut -d "\"" -f4 `
 echo $token
 for file in ${files[@]}  
 do  
-    curl -v -X GET "https://api.webrtc.win:6601/v1/customer/nodes?client_ip=127.0.0.1&host=qq.webrtc.win&uri=${file}&md5=ab340d4befcf324a0a1466c166c10d1d" \
-        -H "X-Pear-Token: ${token}" \
-        -H "Content-Type:application/json" 
+    curl -v -X GET "https://api.webrtc.win:6601/v1/customer/nodes
+    client_ip=127.0.0.1&host=qq.webrtc.win&uri=${file}&md5=ab340d4befcf324a0a1466c166c10d1d" \
+         -H "X-Pear-Token: ${token}" \
+         -H "Content-Type:application/json" 
 done  
 exit 0
 ```
      
-   4.  查看流量
+##  4.  查看流量
    
     4.1 通过NMS系统登录查询
        
@@ -147,15 +147,15 @@ exit 0
     
 ``` shell
     curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
-     -H "X-Pear-Token: ${token}" \
-     -H "Content-Type:application/json" 
+         -H "X-Pear-Token: ${token}" \
+         -H "Content-Type:application/json" 
 ```
    
      
-# 手动安装pear程序
-* 获取pear_software.tar.gz安装包
-* tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
-* 配置开机启动pear_restart即可
-* pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动pear程序集
+# 五.手动安装pear程序
+## 1. 获取pear_software.tar.gz安装包
+## 2. tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
+## 3. 配置开机启动pear_restart即可
+## 4. pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动pear程序集
 
 
