@@ -106,6 +106,7 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
       ![Push](fig/node_cache.png)
       
    3.  查看流量
+   
     3.1 通过NMS系统登录查询
        
     ![Push](fig/node_traffic.png)
