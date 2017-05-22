@@ -95,8 +95,18 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
      ![设备基本信息](fig/node_stat.png)
      
      
-
-     
+ #  内容分发流程
+ 
+   1.  CP厂商通过后台推送新的视频文件
+   
+      ![Push](fig/cp_push.png)
+      
+   2.  文件先从源站缓存在我们内部cache服务器，然后分发到各个节点，之后可以看到节点缓存的文件信息
+   
+      ![Push](fig/node_cache.png)
+      
+      
+   
      
      
      
