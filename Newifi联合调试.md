@@ -88,12 +88,12 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
      ![微信绑定](fig/wechat_bind.png)
      
     
-##  4. 查看绑定设备的关键信息
+##  4. 查看设备关键信息
     
      ![设备基本信息](fig/user_info.png)
      
      
-##  5. 查看设备CPU、Memory、IP、及服务健康状态，目前节点走https和datachannel(DTLS) 通道以保证数据传输的安全
+##  5. 查看设备其他信息(CPU、Memory、IP、及服务健康状态，目前节点走https和datachannel(DTLS) 通道以保证数据传输的安全)
     
      ![设备基本信息](fig/node_stat.png)
      
