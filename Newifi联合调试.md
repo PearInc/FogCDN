@@ -28,11 +28,11 @@
 *  比如，你插入一个可用空间只有1G的硬盘，但是里面有超过9G的空间被Pear缓存文件占用，那么也满足条件
  
  
-# 检验Mac和sn有效性的API交互时序图
+## 7. 检验Mac和sn有效性的API交互时序图
    ![节点架构](fig/api_sequence.png)
    
    
- # Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
+# 二. Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
