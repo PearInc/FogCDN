@@ -82,7 +82,7 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
    
    3. 通过微信绑定
      
-     ![微信绑定](fig/hand_bind.png)
+     ![微信绑定](fig/wechat_bind.png)
      
      
      
