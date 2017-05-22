@@ -1,4 +1,4 @@
-# 一. Pear程序说明
+# 一.  Pear程序说明
 ## 0. 特殊说明
 *  Pear程序需要具备root权限，Pear程序统一放在/usr/sbin目录中
 ## 1. pear_restart死活程序
@@ -32,7 +32,7 @@
    ![节点架构](fig/api_sequence.png)
    
    
-# 二. Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
+## 8. Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
@@ -73,8 +73,8 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
  ```
  
  
- # 三. 设备绑定流程
- ## 1. 用户注册(https://nms.webrtc.win/site/signup)
+# 二.  设备绑定流程
+## 1. 用户注册(https://nms.webrtc.win/site/signup)
    
     ![用户注册](fig/sign_in.png)
     
@@ -98,7 +98,7 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
      ![设备基本信息](fig/node_stat.png)
      
      
- #  四. 内容分发流程
+#  三.  内容分发流程
  
 ##  1. CP厂商通过后台推送新的视频文件
    
@@ -152,7 +152,7 @@ exit 0
 ```
    
      
-# 五.手动安装pear程序
+# 四.  手动安装pear程序
 ## 1. 获取pear_software.tar.gz安装包
 ## 2. tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
 ## 3. 配置开机启动pear_restart即可
