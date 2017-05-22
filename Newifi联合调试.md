@@ -70,9 +70,7 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
  
  
  # 节点绑定
-   1. 用户注册
-   
-   > https://nms.webrtc.win/site/signup
+   1. 用户注册(https://nms.webrtc.win/site/signup)
     ![用户注册](fig/sign_in.png)
    
 
