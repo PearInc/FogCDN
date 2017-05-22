@@ -28,6 +28,25 @@
    
    2. 提供服务器端查询接口，查询mac与sn的有效性接口，API交互时序图如下：
    ![节点架构](fig/api_sequence.png)
+   
+ ## Pear提供API说明
+ 1. 登录，获取token
+ ```  shell
+ curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
+  -H "Content-Type:application/json" \
+  -d '{
+    "user_name": "pear",
+    "password":  "123456"
+   }'
+
+ ```
+ 2. 获取一定时间段内的流量（包括多个Mac）
+ ```
+ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
+  -H "X-Pear-Token: ${token}" \
+  -H "Content-Type:application/json" 
+ ```
+ 
    
 
 
