@@ -1,4 +1,5 @@
-# 在硬件载体运行的相关程序及说明
+# 一. 说明
+## 在硬件载体运行的相关程序及说明
 1. pear_restart死活程序
 > 负责监控pear_software中所有程序的健康运行
 
@@ -14,13 +15,13 @@
 >  提供webrtc datachannel(udp)数据传输通道 
 
 
-# 关于缓存存储空间的说明
+## 关于缓存存储空间的说明
 
  pear_monitor定时检测设备外接硬盘设备，永远选择容量最大的设备分区，目前配置为需要10G以上的缓存空间：
  > 缓存空间=硬盘可用空间+硬盘下已经缓存的空间
  
  
-# 需硬件载体方集成事宜及API
+## 需硬件载体方集成事宜及API
    1. Newifi把下面文件集成到路由器中，设置开机启动pear_restart即可：
    * /usr/sbin/pear_monitor
    * /usr/sbin/pear_restart(会负责启动相关服务)
@@ -32,7 +33,7 @@
    ![节点架构](fig/api_sequence.png)
    
    
- # Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
+ ## Pear提供API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
