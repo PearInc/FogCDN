@@ -68,6 +68,11 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
   -H "Content-Type:application/json" 
  ```
  
+ 
+ # 节点绑定
+   ## 用户注册
+   * https://nms.webrtc.win/site/signup
+    ![用户注册](fig/api_sequence.png)
    
 
 
