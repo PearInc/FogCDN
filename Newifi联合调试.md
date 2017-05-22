@@ -1,4 +1,4 @@
-# Pear程序说明
+# 一. Pear程序说明
 ## 0. 特殊说明
 *  Pear程序具备root权限，Pear程序统一放在/usr/sbin目录中
 ## 1. pear_restart死活程序
