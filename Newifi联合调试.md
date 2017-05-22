@@ -71,7 +71,18 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
  
  # 节点绑定
    1. 用户注册(https://nms.webrtc.win/site/signup)
+   
     ![用户注册](fig/sign_in.png)
+    
+   2. https://nms.webrtc.win/node-info/index  注册完成或者登录后进入下面界面：分别输入序列号和Mac地址(尤其Mac地址不能输入错误，后面业务逻辑都会与此关联)
+
+   
+    ![手动绑定](fig/hand_bind.png)
    
+   3. 通过微信绑定
+     
+     ![微信绑定](fig/hand_bind.png)
+     
+     
 
 
