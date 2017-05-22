@@ -49,6 +49,9 @@
   -H "X-Pear-Token: ${token}" \
   -H "Content-Type:application/json" 
  ```
+ 
+  ![traffic](fig/get_traffic_data.png)
+  
  3. 完整的shell脚本如下（可以直接运行）
  ``` shell
 #/bin/sh
