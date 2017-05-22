@@ -35,7 +35,7 @@
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
   -H "Content-Type:application/json" \
   -d '{
-    "user_name": "pear",
+    "user_name": "newifi2",
     "password":  "123456"
    }'
 
