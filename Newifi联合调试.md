@@ -73,28 +73,28 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
  ```
  
  
- # 节点绑定
-   1. 用户注册(https://nms.webrtc.win/site/signup)
+ # 三. 设备绑定流程
+ ## 1. 用户注册(https://nms.webrtc.win/site/signup)
    
     ![用户注册](fig/sign_in.png)
-    
-   2. https://nms.webrtc.win/node-info/index  注册完成或者登录后进入下面界面：分别输入序列号和Mac地址(尤其Mac地址不能输入错误，后面业务逻辑都会与此关联)
+    
+##  2. https://nms.webrtc.win/node-info/index  注册完成或者登录后进入下面界面：分别输入序列号和Mac地址(尤其Mac地址不能输入错误，后面业务逻辑都会与此关联)
 
    
     ![手动绑定](fig/hand_bind.png)
    
-   
-   3. 通过微信绑定
+   
+##  3. 通过微信绑定
      
      ![微信绑定](fig/wechat_bind.png)
      
-    
-    4. 查看绑定设备的Mac、SN等
+    
+##  4. 查看绑定设备的Mac、SN等
     
      ![设备基本信息](fig/user_info.png)
      
-     
-    5. 查看设备CPU、Memory、IP、及服务健康状态，目前节点走https和datachannel(DTLS) 通道以保证数据传输的安全
+     
+##  5. 查看设备CPU、Memory、IP、及服务健康状态，目前节点走https和datachannel(DTLS) 通道以保证数据传输的安全
     
      ![设备基本信息](fig/node_stat.png)
      
