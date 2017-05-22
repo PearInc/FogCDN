@@ -1,6 +1,6 @@
 # 一. Pear程序说明
 ## 0. 特殊说明
-*  Pear程序具备root权限，Pear程序统一放在/usr/sbin目录中
+*  Pear程序需要具备root权限，Pear程序统一放在/usr/sbin目录中
 ## 1. pear_restart死活程序
 *  负责监控其他Pear程序的健康运行
 *  通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
