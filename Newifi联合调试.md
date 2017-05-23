@@ -32,7 +32,7 @@
    ![节点架构](fig/api_sequence.png)
    
    
-## 8. API说明 (目前硬件载体平台的Mac都统计到name: newifi2 password: 123456帐号)
+## 8. 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量api如下(账号: newifi2 密码: 123456)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
