@@ -1,24 +1,24 @@
 # 一.  Pear程序说明
 ## 0. 特殊说明
 *  Pear程序需要具备root权限，Pear程序统一放在/usr/sbin目录中
-## 1. pear_restart死活程序
+## 1. pear_restart 死活程序
 *  负责监控其他Pear程序的健康运行
 *  通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
 
-## 2. pear_monitor终端监控程序
+## 2. pear_monitor 终端监控程序
 *  获取宿主系统平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
-*  配置nginx，包括动态申请http端口，和https端口
+*  配置HTTP服务器，包括动态申请HTTP和HTTPS端口
 *  五秒定时检查外接设备（U盘或者移动硬盘）是否移除
 *  五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
 *  三十分钟定时执行测速和远程升级的功能
 
-## 3. pear_datachannel数据通道程序
-*  提供webrtc datachannel(udp)数据传输通道 
+## 3. pear_datachannel 数据通道程序
+*  提供WebRTC DataChannel(UDP)数据传输通道 
 
-## 4. pear_httpd（暂时使用内置nginx程序，后期加入）
-*  提供http/https(tcp)数据传输通道 
+## 4. pear_httpd（暂时使用内置nginx程序，运营期加入）
+*  提供HTTP/HTTPS(TCP)数据传输通道 
 
-## 5. 其他Pear程序（后期加入）
+## 5. 其他Pear程序（运营期逐步加入）
 *  后续会直接通过远程升级的方式增加，以保证服务的稳定和持续增值的能力
 
 
@@ -28,11 +28,11 @@
 *  比如，你插入一个可用空间只有1G的硬盘，但是里面有超过9G的空间被Pear缓存文件占用，那么也满足条件
  
  
-## 7. 检验Mac和sn有效性的API交互时序图
+## 7. 检验Mac和SN有效性的API交互时序图
    ![节点架构](fig/api_sequence.png)
    
    
-## 8. 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量api如下(账号: newifi2 密码: 123456)
+## 8. 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下(账号: newifi2 密码: 123456)
  1. 登录，获取token
  ```  shell
  curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
@@ -52,7 +52,7 @@
  
   ![traffic](fig/get_traffic_data.png)
   
- 3. 完整的shell脚本如下（可以直接运行）
+ 3. 完整的Shell脚本如下（可以直接运行）
  ``` shell
  #/bin/sh
  # Pear Limited
@@ -74,16 +74,16 @@
  
  
 # 二.  设备绑定流程和设备信息查询
-## 1. 用户注册(https://nms.webrtc.win/site/signup)
-   
+## 1. 用户注册（https://nms.webrtc.win/site/signup）
+   
     ![用户注册](fig/sign_in.png)
     
-##  2. 手动绑定设备(https://nms.webrtc.win/node-info/index)
-   
+##  2. 手动绑定设备（https://nms.webrtc.win/node-info/index）
+   
     ![手动绑定](fig/hand_bind.png)
    
    
-##  3. 微信绑定设备(后期制作二维码贴在设备上)
+##  3. 微信绑定设备（运营期制作二维码贴在设备上）
      
      ![微信绑定](fig/wechat_bind.png)
      
@@ -93,8 +93,8 @@
      ![设备基本信息](fig/user_info.png)
      
      
-##  5. 查看设备其他信息(CPU、Memory、IP、及服务健康状态，目前节点走https和datachannel(DTLS) 通道以保证数据传输的安全)
-    
+##  5. 查看设备其他信息（CPU、Memory、IP，及服务健康状态，目前节点走HTTPS和dataChannel(DTLS)通道以保证数据传输的安全）
+    
      ![设备基本信息](fig/node_stat.png)
      
      
@@ -104,7 +104,7 @@
    
       ![Push](fig/cp_push.png)
       
-##  2.  文件先从源站缓存在我们内部cache服务器，然后分发到各个节点，之后可以看到节点缓存的文件信息
+##  2.  文件先从源站缓存在我们内部Cache服务器，然后分发到各个节点，之后可以看到节点缓存的文件信息
    
       ![Push](fig/node_cache.png)
       
@@ -152,10 +152,10 @@ exit 0
 ```
    
      
-# 四.  手动安装Pear程序(后期集成到设备上)
+# 四.  手动安装Pear程序（运营期集成到设备上）
 ## 1. 获取pear_software.tar.gz安装包
 ## 2. tar -C / -zxvf pear_software.tar.gz解压到硬件载体中
 ## 3. 配置开机启动pear_restart即可
-## 4. pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动pear程序集
+## 4. pear_restart自动读取/etc/pear_restart/.conf.json配置信息，启动Pear Fog程序集
 
 
