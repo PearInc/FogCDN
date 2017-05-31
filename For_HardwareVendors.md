@@ -6,7 +6,7 @@
 *  通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
 
 ## 2. pear_monitor终端监控程序
-*  获取PLATFORM平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
+*  获取宿主系统平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
 *  配置nginx，包括动态申请http端口，和https端口
 *  五秒定时检查外接设备（U盘或者移动硬盘）是否移除
 *  五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
@@ -119,9 +119,9 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
 # Pear Limited
 
 files=('/tv/pear.mp4')
-r=`curl  -X POST https://api.webrtc.win:6601/v1/customer/login \
-         -H "Content-Type:application/json" \
-         -d '{
+r=`curl -X POST https://api.webrtc.win:6601/v1/customer/login \
+        -H "Content-Type:application/json" \
+        -d '{
                 "user": "admin",
                 "password":  "123456"
              }'`
