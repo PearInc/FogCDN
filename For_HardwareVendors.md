@@ -15,7 +15,7 @@
 ## 3. pear_datachannel数据通道程序
 *  提供webrtc datachannel(udp)数据传输通道 
 
-## 4. pear_nginx（暂时使用内置nginx程序，后期加入）
+## 4. pear_httpd（暂时使用内置nginx程序，后期加入）
 *  提供http/https(tcp)数据传输通道 
 
 ## 5. 其他Pear程序（后期加入）
