@@ -13,7 +13,7 @@
 - 五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
 - 三十分钟定时执行测速和远程升级的功能
 
-### 数据通道程序(pear_datachannel) 
+### 数据通道程序(pear_webrtc) 
 - 提供WebRTC DataChannel(UDP)数据传输通道 
 
 ### pear_httpd（暂时使用内置nginx程序，运营期加入）
