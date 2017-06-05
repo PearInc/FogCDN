@@ -47,8 +47,27 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
     -H "X-Pear-Token: ${token}" \
     -H "Content-Type:application/json" 
 ```
+``` js
+[
+      {
+            "mac_addr": "20:76:93:3c:dd:51",
+            "values": [
+            {
+              "traffic": 48,
+              "time": 1494834900
+            }]
+      }
+      {
+          "mac_addr": "20:76:93:58:90:12",
+          "values": [
+            {
+              "traffic": 16449536,
+              "time": 1495440300
+            }]
+      }
+]
+```
 
-![traffic](fig/get_traffic_data.png)
   
 #### 完整的Shell脚本如下（可以直接运行）
 ``` shell
