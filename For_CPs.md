@@ -21,6 +21,7 @@
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
 * 默认采用First-aid算法
+
 ![First-aid](fig/firstaid.png)
 ## 移动端的播放器SDK或协议嵌入
 
