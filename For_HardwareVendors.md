@@ -47,6 +47,8 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
     -H "X-Pear-Token: ${token}" \
     -H "Content-Type:application/json" 
 ```
+
+返回的真实流量格式及数据如下：
 ``` js
 [
       {
