@@ -58,8 +58,8 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
               "traffic": 48,
               "time": 1494834900
             }]
-      }
-      {
+      }，
+      {
           "mac_addr": "20:76:93:58:90:12",
           "values": [
             {
