@@ -7,13 +7,13 @@
 - 通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
 
 ### 终端监控程序(pear_monitor)
-- 获取宿主系统平台架构信息，公网ip，本地ip，mac地址，hardware相关信息
+- 获取宿主系统平台架构信息，公网IP、本地IP、Mac地址、硬件相关信息
 - 配置HTTP服务器，包括动态申请HTTP和HTTPS端口
 - 五秒定时检查外接设备（U盘或者移动硬盘）是否移除
 - 五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
 - 三十分钟定时执行测速和远程升级的功能
 
-### 数据通道程序(pear_webrtc) 
+### 数据通道程序（pear_webrtc） 
 - 提供WebRTC DataChannel(UDP)数据传输通道 
 
 ### pear_httpd（暂时使用内置nginx程序，运营期加入）
