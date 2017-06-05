@@ -2,21 +2,21 @@
 ### 特殊说明
 - Pear程序需要具备root权限，Pear程序统一放在/usr/sbin目录中
 
-### 死活程序(pear_restart)
+### pear_restart（死活程序）
 - 负责监控其他Pear程序的健康运行
 - 通过读取/etc/pear_restart/.conf.json配置文件，决定加载哪些服务（运行其他Pear程序）
 
-### 终端监控程序(pear_monitor)
+### pear_monitor（终端监控程序）
 - 获取宿主系统平台架构信息，公网IP、本地IP、Mac地址、硬件相关信息
 - 配置HTTP服务器，包括动态申请HTTP和HTTPS端口
 - 五秒定时检查外接设备（U盘或者移动硬盘）是否移除
 - 五分钟定时获取流量、上报缓存文件信息和执行服务器的任务（下载缓存文件等）
 - 三十分钟定时执行测速和远程升级的功能
 
-### 数据通道程序（pear_webrtc） 
+### pear_webrtc（WebRTC传输通道程序） 
 - 提供WebRTC DataChannel(UDP)数据传输通道 
 
-### pear_httpd（暂时使用内置nginx程序，运营期加入）
+### pear_httpd（暂时使用内置Nginx程序，运营期加入）
 - 提供HTTP/HTTPS(TCP)数据传输通道 
 
 ### 其他Pear程序（运营期逐步加入）
