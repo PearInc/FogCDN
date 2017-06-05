@@ -5,14 +5,13 @@
 ## 集成方便，CP或CDN均可“一键启用”
 
 ``` js
-<video id="v1"></video>
+<video id="v1" src="https://xxx.webrtc.win/tv/f.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
     var PearPlayer = require('PearPlayer');
     PearPlayer('#v1',{
-        type: 'mp4',
-        src: 'https://xxx.webrtc.win/tv/f.mp4',
-        token: token
+        type: 'mp4',
+        token: token
     });
 </script>
 ```
