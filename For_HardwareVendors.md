@@ -92,10 +92,10 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
 ```
 
 ## 设备绑定流程和设备信息查询
-### 用户注册（https://nms.webrtc.win/site/signup）
+### 用户注册(https://nms.webrtc.win/site/signup)
 ![用户注册](fig/sign_in.png)
 
-### 手动绑定设备（https://nms.webrtc.win/node-info/index）
+### 手动绑定设备(https://nms.webrtc.win/node-info/index)
 ![手动绑定](fig/hand_bind.png)
 
 ### 微信绑定设备（运营期制作二维码贴在设备上）
