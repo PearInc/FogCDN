@@ -44,5 +44,5 @@
 ## 安全可靠
 
    * 所有边缘节点支持TLS，HTTP默认使用HTTPS(HTTP2.0)通道
-   * WebRTC通道传输数据使用SCTP协议和TLS加密来保护
-   * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用DTLS加密
+   * WebRTC通道传输数据使用SCTP协议和DTLS加密来保护
+   * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS/SSL加密
