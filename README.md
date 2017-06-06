@@ -25,7 +25,7 @@
    * 服务能力覆盖全部地域、所有运营商、每处网络边缘。
    * 动态、实时的感知和调度，让数据传输距离尽可能接近“零跳”。
    
-![节点架构](fig/pear-fog-node-engine.png)
+   ![节点架构](fig/pear-fog-node-engine.png)
 
 ## 支持开放的、国际标准的协议，如：
    + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
