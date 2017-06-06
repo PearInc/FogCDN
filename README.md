@@ -58,7 +58,7 @@
 
 2. 在数据传输上，传统CDN是一对一的，Pear FogVDN采用从多源多通道获取文件数据，减少了对单点和单链路的依赖，解决了播发高清视频而单链路无法满足此带宽出现的卡顿问题，通过UDP通道也解决弱网环境丢包的问题，让用户获得更佳的下载体验。
 
-![multisources](fig/fogvdn_multisources.png)
+  ![multisources](fig/fogvdn_multisources.png)
 
 3. 在数据安全方面，支持整个传输链路的安全传输。
 
