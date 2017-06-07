@@ -23,17 +23,17 @@
 
    将资源、服务的计算、存储、控制和网络从云延伸到雾，具有下面几个明显的优势：
    
-<img src="fig/icon/延迟.png" width="30"> 超低延迟 
+<img src="fig/icon/延迟.png" width="30">   超低延迟 
 <br>
-<img src="fig/icon/敏捷.png" width="30"> 业务敏捷性 
+<img src="fig/icon/敏捷.png" width="30">   业务敏捷性 
 <br>
-<img src="fig/icon/安全.png" width="30"> 安全性
+<img src="fig/icon/安全.png" width="30">   安全性
 <br>
-<img src="fig/icon/实时分析.png" width="30"> 实时分析
+<img src="fig/icon/实时分析.png" width="30">   实时分析
 <br>
-<img src="fig/icon/降低成本.png" width="30"> 降低成本
+<img src="fig/icon/降低成本.png" width="30">   降低成本
 <br>
-<img src="fig/icon/宽带.png" width="30"> 更少的带宽和网络负载
+<img src="fig/icon/宽带.png" width="30">   更少的带宽和网络负载
 ## 众包，海量节点，广覆盖
 
    - 拥有海量可持续稳定提供服务的节点。
