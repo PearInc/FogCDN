@@ -33,7 +33,7 @@
 <br>
 <img src="fig/icon/降低成本.png" width="30">   低成本
 <br>
-<img src="fig/icon/宽带.png" width="30">   大幅减少网络流量
+<img src="fig/icon/宽带.png" width="30">   大幅减少网络流量
 ## 众包，海量节点，广覆盖
 
    - 拥有海量可持续稳定提供服务的节点。
