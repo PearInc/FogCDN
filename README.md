@@ -19,9 +19,9 @@
 > FogVDN是Web友好的，使用开放的Web标准（不需要额外的任何插件，只需要HTML5和WebRTC）
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
-## Pear FogVDN雾计算
+## Pear雾计算
 
-   将资源、服务的计算、存储、控制和网络从云延伸到雾，具有下面几个明显的优势：
+   将计算、存储、带宽、IP、和控制从云延伸到雾，具有下面几个明显的优势：
    
 <img src="fig/icon/延迟.png" width="30">   超低延迟 
 <br>
@@ -31,9 +31,9 @@
 <br>
 <img src="fig/icon/实时分析.png" width="30">   实时分析
 <br>
-<img src="fig/icon/降低成本.png" width="30">   降低成本
+<img src="fig/icon/降低成本.png" width="30">   低成本
 <br>
-<img src="fig/icon/宽带.png" width="30">   更少的带宽和网络负载
+<img src="fig/icon/宽带.png" width="30">   大幅减少网络流量
 ## 众包，海量节点，广覆盖
 
    - 拥有海量可持续稳定提供服务的节点。
