@@ -25,15 +25,21 @@
    
 <img src="fig/icon/延迟.png" width="30">   超低延迟 
 <br>
+<br>
 <img src="fig/icon/敏捷.png" width="30">   业务敏捷性 
+<br>
 <br>
 <img src="fig/icon/安全.png" width="30">   安全性
 <br>
+<br>
 <img src="fig/icon/实时分析.png" width="30">   实时分析
+<br>
 <br>
 <img src="fig/icon/降低成本.png" width="30">   低成本
 <br>
+<br>
 <img src="fig/icon/宽带.png" width="30">   大幅减少网络流量
+<br>
 ## 众包，海量节点，广覆盖
 
    - 拥有海量可持续稳定提供服务的节点。
