@@ -24,22 +24,22 @@
 
    将计算、存储、带宽、IP、和控制从云延伸到雾，具有下面几个明显的优势：
    
-<img src="fig/icon/延迟.png" width="30">   超低延迟 
+<img src="fig/icon/延迟.png" width="24">   超低延迟 
 <br>
 <br>
-<img src="fig/icon/敏捷.png" width="30">   业务敏捷性 
+<img src="fig/icon/敏捷.png" width="24">   业务敏捷性 
 <br>
 <br>
-<img src="fig/icon/安全.png" width="30">   安全性
+<img src="fig/icon/安全.png" width="24">   安全性
 <br>
 <br>
-<img src="fig/icon/实时分析.png" width="30">   实时分析
+<img src="fig/icon/实时分析.png" width="24">   实时分析
 <br>
 <br>
-<img src="fig/icon/降低成本.png" width="30">   低成本
+<img src="fig/icon/降低成本.png" width="24">   低成本
 <br>
 <br>
-<img src="fig/icon/宽带.png" width="30">   大幅减少网络流量
+<img src="fig/icon/宽带.png" width="24">   大幅减少网络流量
 <br>
 ## 众包，海量节点，广覆盖
 
@@ -76,19 +76,19 @@
 
    Pear FogVDN目前拥有完全自主研发多项核心技术
 
-<img src="fig/icon/延迟.png" width="30">   独立研发的分布式CDN通过共享经济的模式改变了传统CDN的技术结构，通过海量的节点，让数据传输距离可近至1km。
+<img src="fig/icon/延迟.png" width="24">   独立研发的分布式CDN通过共享经济的模式改变了传统CDN的技术结构，通过海量的节点，让数据传输距离可近至1km。
 <br>
 <br>
-<img src="fig/icon/安全.png" width="30">   在数据传输上，传统CDN是一对多的，即用户平均服务质量和用户数呈“逆线性关系”。Pear FogVDN采取从多源多通道获取文件数据的方案，减少了对单点和单链路的依赖，解决了播发高清视频而单链路无法满足此带宽出现的卡顿问题，通过UDP通道也解决弱网环境丢包的问题，让用户获得更佳的下载体验。
+<img src="fig/icon/安全.png" width="24">   在数据传输上，传统CDN是一对多的，即用户平均服务质量和用户数呈“逆线性关系”。Pear FogVDN采取从多源多通道获取文件数据的方案，减少了对单点和单链路的依赖，解决了播发高清视频而单链路无法满足此带宽出现的卡顿问题，通过UDP通道也解决弱网环境丢包的问题，让用户获得更佳的下载体验。
 <br>
 <br>
 
   ![multisources](fig/fogvdn_multisources.png)
   
-<img src="fig/icon/安全.png" width="30">   在数据安全方面，支持整个传输链路的安全传输。
+<img src="fig/icon/安全.png" width="24">   在数据安全方面，支持整个传输链路的安全传输。
 <br>
 <br>
-<img src="fig/icon/降低成本.png" width="30">   价格优势，相对于传统CDN依赖于昂贵的机房服务器，我们依赖于海量的节点共享经济的模式，保守估计价格最多为传统CDN价格的一半。
+<img src="fig/icon/降低成本.png" width="24">   价格优势，相对于传统CDN依赖于昂贵的机房服务器，我们依赖于海量的节点共享经济的模式，保守估计价格最多为传统CDN价格的一半。
 <br>
 <br>
 
