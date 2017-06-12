@@ -5,6 +5,7 @@
 ## 集成方便，CP或CDN均可“一键启用”
 
 ``` js
+<script src="./pear-player.min.js"></script>
 <video id="v1" src="https://example.com/v1.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
