@@ -27,7 +27,8 @@
    - 动态、实时的感知和调度，让数据传输距离尽可能接近“零跳”。
 
 ![节点架构](fig/pear-fog-node-engine.png)
-<img src="fig/devices/PearSharingBox1.jpg" height="150"> <img src="fig/icon/PearSharingBox2.png" width="150"> <img src="fig/icon/QNAP.png" width="150"> <img src="fig/icon/newifi2.png" width="150"> <img src="fig/icon/newifi3.png" width="150">
+
+<img src="fig/devices/PearSharingBox1.jpg" height="150"> <img src="fig/devices/PearSharingBox2.png" width="150"> <img src="fig/devices/QNAP.png" width="150"> <img src="fig/devices/newifi2.png" width="150"> <img src="fig/devices/newifi3.png" width="150">
 
 ## <img src="fig/icon/延迟.png" width="28"> 超低延迟
 
@@ -63,11 +64,11 @@
    * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS/SSL加密。
    * 可选的数据加密，与分段、分片、分块。
 
-## <img src="fig/icon/降低成本.png" width="28">  低成本
+## <img src="fig/icon/降低成本.png" width="28"> 低成本
 
    相对于传统CDN依赖于昂贵的机房、服务器和租赁带宽，Pear FogVDN凭借海量的节点和共享经济的模式，价格相比传统CDN显著降低。
 
-## 网络感知、内容感知、用户感知
+## <img src="fig/icon/地域统计.png" width="28"> 网络感知、内容感知、用户感知
 
    1. 精确解析
    
