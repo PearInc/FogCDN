@@ -94,6 +94,8 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
 #### 查看某个设备下的流量
 ![查看某个设备下的流量](fig/owner/traffic.png)
 
-### 流量兑换，查看每台设备的流量，统计3个月的流量，及时提现成pear coin。
+### 流量兑换，查看每台设备的流量，统计3个月的流量，及时提现成Pear Coin。
 #### 查看某个设备下的总流量
 ![查看某个设备下的总流量](fig/owner/total_traffic.png)
+
+> 继续补充通过weixin等平台兑换Pear Coin
