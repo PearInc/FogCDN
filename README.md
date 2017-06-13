@@ -2,7 +2,7 @@
 
   Pear（梨享）出品的一个面向未来、专注于服务在线视频流媒体的CDN。它是Pear Fog（梨享雾计算）平台的重要组成部分，具有以下特色：
 
-## 集成方便，CP或CDN均可“一键启用”
+## <img src="fig/icon/一键接入.png" width="24"> 集成方便，CP或CDN均可“一键启用”
 
 ``` js
 <video id="v1" src="https://example.com/v1.mp4"></video>
@@ -19,9 +19,9 @@
 > FogVDN是Web友好的，使用开放的Web标准（不需要额外的任何插件，只需要HTML5和WebRTC）
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
-## <img src="fig/icon/延迟.png" width="24">   超低延迟 
+## <img src="fig/icon/延迟.png" width="24"> 超低延迟 
 
-## 众包，海量节点，广覆盖
+## <img src="fig/icon/海量规模.png" width="24"> 众包，海量节点，广覆盖
 
    - 拥有海量可持续稳定提供服务的节点。
    - 大部分带宽、存储、计算资源通过众包方式收集自终端用户稳定在线的边缘设备。
@@ -30,20 +30,20 @@
 
 ![节点架构](fig/pear-fog-node-engine.png)
 
-## 支持开放的、国际标准的协议，如：
+## <img src="fig/icon/iso.png" width="24"> 支持开放的、国际标准的协议，如：
 
    + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
    + [WebRTC](https://webrtc.org/)
    + [HLS](https://developer.apple.com/streaming/)
    + [DASH](http://mpeg.chiariglione.org/standards/mpeg-dash)
   
-## Web友好，“连接一切”
+## <img src="fig/icon/连接一切.png" width="24"> Web友好，“连接一切”
 
 ![播放器](fig/PearPlayer.png)
 
-## 高效率，在VoD、Live、VoIP等场景中均有专门优化的定制算法
+## <img src="fig/icon/智能算法.png" width="24"> 高效率，在VoD、Live、VoIP等场景中均有专门优化的定制算法
 
-## 安全可靠
+## <img src="fig/icon/ssl_ca.png" width="24"> 安全可靠
 
    支持整个传输链路的安全传输，防止文件被篡改,避免版权文件的泄漏及内容劫持等。
    
@@ -52,7 +52,7 @@
    * WebRTC通道传输数据使用SCTP协议和DTLS加密来保护
    * 信令通信是通过安全的WebSocket完成的，该WebSocket也使用TLS/SSL加密
 
-## 核心技术
+## <img src="fig/icon/核心技术.png" width="24"> 核心技术
 
    Pear FogVDN目前拥有完全自主研发多项核心技术
 
