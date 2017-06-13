@@ -21,12 +21,14 @@
 ![设备基本信息](fig/owner/bing_mac.png)
 
 ### 查看某个设备其他信息（CPU、Memory、IP，及服务健康状态，目前节点走HTTPS和dataChannel(DTLS)通道以保证数据传输的安全）
+#### 所有设备的基本信息列表
 ![所有设备的基本信息列表](fig/owner/node_state.png)
 
 ![某个设备的基本信息](fig/owner/single_node_state.png)
 
 ### 查看流量
 ### 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下(账号: newifi2 密码: 123456)
+#### 查看所有设备下的流量列表
 ![查看所有设备下的流量列表](fig/owner/traffic_list.png)
 
 #### 登录，获取token
@@ -89,7 +91,9 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?star
       -H "Content-Type:application/json" 
 ```
 ### 流量分布显示图
+#### 查看某个设备下的流量
 ![查看某个设备下的流量](fig/owner/traffic.png)
 
 ### 流量兑换，查看每台设备的流量，统计3个月的流量，及时提现成pear coin。
+#### 查看某个设备下的总流量
 ![查看某个设备下的总流量](fig/owner/total_traffic.png)
