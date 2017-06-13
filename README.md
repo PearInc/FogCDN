@@ -5,7 +5,6 @@
 ## 集成方便，CP或CDN均可“一键启用”
 
 ``` js
-<script src="./pear-player.min.js"></script>
 <video id="v1" src="https://example.com/v1.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
@@ -88,7 +87,7 @@
 <img src="fig/icon/安全.png" width="24">   在数据安全方面，支持整个传输链路的安全传输。
 <br>
 <br>
-<img src="fig/icon/降低成本.png" width="24">   价格优势，相对于传统CDN依赖于昂贵的机房服务器，我们依赖于海量的节点共享经济的模式，保守估计价格最多为传统CDN价格的一半。
+<img src="fig/icon/降低成本.png" width="24">   价格优势，相对于传统CDN依赖于昂贵的机房、服务器和租赁带宽，我们凭借海量的节点共享经济的模式，价格可低至传统CDN的一半。
 <br>
 <br>
 
