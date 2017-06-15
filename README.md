@@ -28,7 +28,7 @@
 
 ![节点架构](fig/pear-fog-node-engine.png)
 
-<img src="fig/devices/PearSharingBox1.jpg" height="150"> <img src="fig/devices/PearSharingBox2.png" width="150"> <img src="fig/devices/QNAP.png" width="150"> <img src="fig/devices/newifi2.png" width="150"> <img src="fig/devices/newifi3.png" width="150">
+<img src="fig/devices/PearSharingBox1.jpg" height="150"> <img src="fig/devices/PearSharingBox2.png" height="150"> <img src="fig/devices/QNAP.png" height="150"> <img src="fig/devices/newifi2.png" height="150"> <img src="fig/devices/newifi3.png" height="150">
 
 ## <img src="fig/icon/延迟.png" width="28"> 超低延迟
 
