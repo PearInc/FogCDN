@@ -51,14 +51,14 @@ POST https://api.webrtc.win:7201/v1/vdn/owner/login  HTTP/1.1
 
 Header: Content-Type: application/json
 ```
-**请求**
+请求
 ```json
 {
     "user_name": "用户名 string",
     "password":  "密码   string"
 }
 ```
-**响应**
+响应
 ```json
 {
     "token": "Token string"
@@ -74,13 +74,13 @@ GET https://api.webrtc.win:7201/v1/vdn/owner/{user_id:[0-9]+}/traffic  HTTP/1.1
 Header: X-Pear-Token = token
 Header: Content-Type: application/json
 ```
-**请求参数**
+请求参数
 ```
 start_date: 开始日期(时间戳)
 end_date:   结束日期(时间戳)
 ```
 
-**响应**
+响应
 ``` json
 [
     {
