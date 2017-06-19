@@ -101,7 +101,6 @@ curl  -X POST https://api.webrtc.win:7401/v1/oss/cp/login \
 - 运营商
 - 国家、区域、省份
 - 热度
-- 优先级
 
 ```
 GET https://api.webrtc.win:7401/v1/vdn/owner/{user_id:[0-9]+}  HTTP/1.1
