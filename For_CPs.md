@@ -121,9 +121,7 @@ end_date:   结束日期(时间戳)
 
 ## CP用户管理平台 OSS
 
-### 用户注册 
-[url](https://oss.webrtc.win/site/signup)
-
+### 用户注册 [signup](https://oss.webrtc.win/site/signup)
 ![用户注册](fig/oss/sign_in.png)
 
 ### 域名管理
@@ -133,7 +131,7 @@ end_date:   结束日期(时间戳)
 #### 添加域名
 ![添加域名](fig/oss/add_domain.png)
 
-### 视频缓存配置 内容分发流程（指定缓存哪些视频文件）
+### 视频缓存配置
 #### 配置视频缓存
 ![缓存配置](fig/oss/cache_update.png)
 
