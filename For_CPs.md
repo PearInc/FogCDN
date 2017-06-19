@@ -121,32 +121,27 @@ end_date:   结束日期(时间戳)
 
 ## CP用户管理平台 OSS
 
-### [用户注册](https://oss.webrtc.win/site/signup)
+### 用户注册 
+[url](https://oss.webrtc.win/site/signup)
+
 ![用户注册](fig/oss/sign_in.png)
 
-### 首先查看域名管理，如果该页面不存在域名，可点击添加域名
+### 域名管理
 #### 查看域名
 ![查看域名](fig/oss/view_domain.png)
 
 #### 添加域名
 ![添加域名](fig/oss/add_domain.png)
 
-#### 查看绑定的域名
-![查看绑定的域名](fig/oss/domain.png)
+### 视频缓存配置 内容分发流程（指定缓存哪些视频文件）
+#### 配置视频缓存
+![缓存配置](fig/oss/cache_update.png)
 
-## 内容分发流程（指定缓存哪些视频文件）
-
-### CP厂商通过后台推送新的视频文件到绑定的域名下，可按example规则添加缓存文件，默认为https协议
-#### 推送新视频文件
-![推送新视频文件](fig/oss/cache_update.png)
-
-### 文件先从源站缓存在我们内部Cache服务器，然后分发到各个节点，完成以后推送状态显示为成功（可登录NMS系统查看已经缓存的文件）
-#### 查看推送新视频文件状态
-![查看推送新视频文件状态](fig/oss/cache_update_status.png)
+#### 查看视频缓存配置
+![查看缓存配置](fig/oss/cache_update_status.png)
 
 ### 查看流量
+- 域名和时间组合查询流量（域名和时间可选）
 
-### 登录OSS系统，通过单个域名查看某个时间段下的流量（域名和时间可选）
-#### 域名和时间组合查询流量
 ![域名和时间组合查询流量](fig/oss/traffic.png)
 
