@@ -119,21 +119,20 @@ http header: X-Pear-Token = token
         },
         "regions": [
             {
-                "country":  "国家 string",
-                "region":   "区域 string",
-                "province": "省份 string",
-                "city":     "市 string",
-                "isp":      "ISP string"
+                "country":    "国家 string",
+                "region":     "区域 string",
+                "province":   "省份 string",
+                "city":       "市   string",
+                "isp":        "ISP  string",
+                "popularity": "热度 int",
             }
         ],
-        "popularity": "热度 int",
-        "priority":   "优先级 int"
     }
 ]
 ```
 响应
 ```json
 {
-    "err_msg": string
+    "err_msg": "string"
 }
 ```
