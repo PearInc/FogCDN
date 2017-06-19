@@ -42,26 +42,42 @@
 
 > 继续补充通过weixin等平台兑换Pear Coin
 
-### 查看流量
-### 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下(账号: newifi2 密码: 123456)
-#### 查看所有设备下的流量列表
-![查看所有设备下的流量列表](fig/owner/traffic_list.png)
+
+## 服务对接API
+
+### 流量查看
 
 #### 登录，获取token
-```  shell
-curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
-      -H "Content-Type:application/json" \
-      -d '{
-              "user_name": "newifi2",
-              "password":  "123456"
-          }'
-
 ```
+POST https://api.webrtc.win:7201/v1/vdn/owner/login  HTTP/1.1
+
+Header: Content-Type: application/json
+```
+**请求**
+```json
+{
+    "user_name": "用户名 string",
+    "password":  "密码   string"
+}
+```
+**响应**
+```json
+{
+    "token": "Token string"
+}
+```
+
 #### 获取一定时间段内的流量（包括多个Mac）
-``` shell
-curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
-    -H "X-Pear-Token: ${token}" \
-    -H "Content-Type:application/json" 
+```
+GET https://api.webrtc.win:7201/v1/vdn/owner/51/traffic  HTTP/1.1
+
+Header: X-Pear-Token = token
+Header: Content-Type: application/json
+```
+**请求参数**
+```
+start_date: 开始日期(时间戳)
+end_date:   结束日期(时间戳)
 ```
 
 **响应**
@@ -70,43 +86,14 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
     {
         "mac_addr": "MAC地址 string",
         "values": [
-          {
+            {
                 "traffic": "流量 int",
                 "time":    "时间戳 int"
-          }
-      ]
+            }
+        ]
     }
 ]
 ```
-
-#### 完整的Shell脚本如下（可以直接运行）
-``` shell
-#/bin/sh
-# Pear Limited
-r=`curl -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
-         -H "Content-Type:application/json" \
-         -d '{
-                 "user_name": "newifi2",
-                 "password":  "123456"
-            }'`
-user_id=`echo $r | cut -d ":" -f2 | cut -d "," -f1`
-user_id="${user_id// /}"
-echo $user_id;
-token=`echo $r | cut -d "\"" -f14 `
-#echo ${token}
-curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/${user_id}/traffic?start_date=1494780990&end_date=1496443900" \ 
-      -H "X-Pear-Token: ${token}" \
-      -H "Content-Type:application/json" 
-```
-### 流量分布显示图
-#### 查看某个设备下的流量
-![查看某个设备下的流量](fig/owner/traffic.png)
-
-### 流量兑换，查看每台设备的流量，统计3个月的流量，及时提现成Pear Coin。
-#### 查看某个设备下的总流量
-![查看某个设备下的总流量](fig/owner/total_traffic.png)
-
-> 继续补充通过weixin等平台兑换Pear Coin
 
 ## 附：Pear推荐的合作厂商设备列表
 - Newifi2/3
