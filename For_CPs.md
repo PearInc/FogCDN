@@ -121,7 +121,7 @@ end_date:   结束日期(时间戳)
 
 ## CP用户管理平台 OSS
 
-### 用户注册(https://oss.webrtc.win/site/signup)
+### [用户注册](https://oss.webrtc.win/site/signup)
 ![用户注册](fig/oss/sign_in.png)
 
 ### 首先查看域名管理，如果该页面不存在域名，可点击添加域名
