@@ -2,7 +2,7 @@
 
 ## Web端的一键接入
 
-内容提供商可以“一键接入”Pear Fog CDN：
+* **内容提供商**可以“一键接入”Pear Fog CDN：
 
 ``` js
 <video id="v1"></video>
@@ -90,7 +90,7 @@ Header: X-Pear-Token = token
 }
 ```
 
-### 查看流量
+### 流量查看
 
 ```
 GET https://api.webrtc.win:7401/v1/oss/cp/53/traffic  HTTP/1.1
@@ -138,7 +138,7 @@ end_date:   结束日期(时间戳)
 #### 查看视频缓存配置
 ![查看缓存配置](fig/oss/cache_update_status.png)
 
-### 查看流量
+### 流量查看
 - 域名和时间组合查询流量（域名和时间可选）
 
 ![域名和时间组合查询流量](fig/oss/traffic.png)
