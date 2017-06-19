@@ -52,7 +52,7 @@ Header: Content-Type: application/json
 ```
 
 ### 上报视频调度维度API
-- 运营商
+- ISP
 - 国家、区域、省份
 - 热度
 
