@@ -79,17 +79,17 @@ curl  -X POST https://api.webrtc.win:7401/v1/oss/cp/login \
 ```
 
 响应
-``` json
+```json
 [
-    {
-        "host": "host string",
-        "values": [
-	          {
-                "traffic": "流量 int",
-                "time":    "时间戳 int"
-	          }
-	      ]
-    }
+  {
+    "host": "host string",
+    "values": [
+      {
+        "traffic": "流量 int",
+        "time":    "时间戳 int"
+      }
+    ]
+  }
 ]
 ```
 
