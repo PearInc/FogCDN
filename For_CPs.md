@@ -64,7 +64,7 @@ Pear为Android和iOS的开发者提供方便的协议或SDK嵌入方式...
 ### 登录，获取token(https://oss.webrtc.win/site/login)
 ```  shell
 curl  -X POST https://api.webrtc.win:7401/v1/oss/cp/login \
-      -H "Content-Type:application/json" \
+      -H "Content-Type: application/json" \
       -d '{
               "user_name": "cp",
               "password":  "123456"
@@ -75,24 +75,20 @@ curl  -X POST https://api.webrtc.win:7401/v1/oss/cp/login \
 ``` shell
     curl -v -X GET "https://api.webrtc.win:7401/v1/oss/cp/53/traffic?host=qq.webrtc.win&start_date=149306600&end_date=1495890990" \
          -H "X-Pear-Token: ${token}" \
-         -H "Content-Type:application/json"                           
+         -H "Content-Type: application/json"                           
 ```
 
-返回的真实流量格式及数据如下：
-``` js
+响应
+``` json
 [
-   {
-	    "host": "qq.webrtc.win",
-	    "values": [
-	      {
-	        "traffic": 1049475,
-	        "time": 1493266721
-	      },
-	      {
-	        "traffic": 34616533,
-	        "time": 1493266741
-	      },
-	    ]
+    {
+        "host": "host string",
+        "values": [
+	          {
+                "traffic": "流量 int",
+                "time":    "时间戳 int"
+	          }
+	      ]
     }
 ]
 ```
