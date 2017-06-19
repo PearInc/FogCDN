@@ -19,11 +19,28 @@
 - 通过微信扫描设备上的二维码进行绑定
 ![微信绑定](fig/wechat_bind.png)
 
-### 绑定设备列表
+### 设备绑定列表
 ![设备列表](fig/owner/node_state.png)
 
 ### 设备详细信息
 ![设备详细信息](fig/owner/single_node_state.png)
+
+### 流量查看
+#### 查看流量入口
+![设备列表](fig/owner/traffic_list.png)
+
+#### 查看某个设备的流量
+- 按日期范围查询
+![某个设备的流量](fig/owner/traffic.png)
+
+#### 流量兑换
+- 查看每台设备近3个月的流量
+- 及时提现成Pear Coin
+
+#### 查看某个设备的总流量
+![查看某个设备的总流量](fig/owner/total_traffic.png)
+
+> 继续补充通过weixin等平台兑换Pear Coin
 
 ### 查看流量
 ### 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下(账号: newifi2 密码: 123456)
