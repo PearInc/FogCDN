@@ -97,3 +97,43 @@ curl  -X POST https://api.webrtc.win:7401/v1/oss/cp/login \
 ]
 ```
 
+### 上报视频调度维度API
+- 运营商
+- 国家、区域、省份
+- 热度
+- 优先级
+
+```
+GET https://api.webrtc.win:7401/v1/vdn/owner/{user_id:[0-9]+}  HTTP/1.1
+
+http header: X-Pear-Token = token
+```
+输入
+```json
+[
+    {
+        "video": {
+            "scheme": string,
+            "host":   string,
+            "uri":    string
+        },
+        "regions": [
+            {
+                "country":  string,
+                "region":   string,
+                "province": string,
+                "city":     string,
+                "isp":      string
+            }
+        ],
+        "popularity": int,
+        "priority":   int
+    }
+]
+```
+输出
+```json
+{
+    "err_msg": string
+}
+```
