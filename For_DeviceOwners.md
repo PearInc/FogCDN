@@ -69,7 +69,7 @@ Header: Content-Type: application/json
 - 获取一定时间段内的流量（包括多个Mac）
 
 ```
-GET https://api.webrtc.win:7201/v1/vdn/owner/51/traffic  HTTP/1.1
+GET https://api.webrtc.win:7201/v1/vdn/owner/{user_id:[0-9]+}/traffic  HTTP/1.1
 
 Header: X-Pear-Token = token
 Header: Content-Type: application/json

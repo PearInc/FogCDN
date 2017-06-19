@@ -93,7 +93,7 @@ Header: X-Pear-Token = token
 ### 流量查看
 
 ```
-GET https://api.webrtc.win:7401/v1/oss/cp/53/traffic  HTTP/1.1
+GET https://api.webrtc.win:7401/v1/oss/cp/{user_id:[0-9]+}/traffic  HTTP/1.1
 
 Header: X-Pear-Token = token
 ```
