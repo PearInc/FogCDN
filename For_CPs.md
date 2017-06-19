@@ -108,30 +108,30 @@ GET https://api.webrtc.win:7401/v1/vdn/owner/{user_id:[0-9]+}  HTTP/1.1
 
 http header: X-Pear-Token = token
 ```
-输入
+请求
 ```json
 [
     {
         "video": {
-            "scheme": string,
-            "host":   string,
-            "uri":    string
+            "scheme": "string",
+            "host":   "string",
+            "uri":    "string"
         },
         "regions": [
             {
-                "country":  string,
-                "region":   string,
-                "province": string,
-                "city":     string,
-                "isp":      string
+                "country":  "国家 string",
+                "region":   "区域 string",
+                "province": "省份 string",
+                "city":     "市 string",
+                "isp":      "ISP string"
             }
         ],
-        "popularity": int,
-        "priority":   int
+        "popularity": "热度 int",
+        "priority":   "优先级 int"
     }
 ]
 ```
-输出
+响应
 ```json
 {
     "err_msg": string
