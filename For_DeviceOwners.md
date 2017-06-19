@@ -76,8 +76,8 @@ Header: Content-Type: application/json
 ```
 请求参数
 ```
-start_date: 开始日期(时间戳)
-end_date:   结束日期(时间戳)
+start_date: 开始日期（时间戳）
+end_date:   结束日期（时间戳）
 ```
 
 响应
