@@ -45,9 +45,7 @@
 
 ## 服务对接API
 
-### 流量查看
-
-#### 登录，获取token
+### 登录，获取token
 ```
 POST https://api.webrtc.win:7201/v1/vdn/owner/login  HTTP/1.1
 
@@ -67,7 +65,9 @@ Header: Content-Type: application/json
 }
 ```
 
-#### 获取一定时间段内的流量（包括多个Mac）
+### 流量查看
+- 获取一定时间段内的流量（包括多个Mac）
+
 ```
 GET https://api.webrtc.win:7201/v1/vdn/owner/51/traffic  HTTP/1.1
 
