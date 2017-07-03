@@ -8,11 +8,7 @@
 <video id="v1" src="https://example.com/v1.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
-    var PearPlayer = require('PearPlayer');
-    PearPlayer('#v1',{
-        type: 'mp4',
-        token: token
-    });
+    var player = new PearPlayer('#v1', token, opts);
 </script>
 ```
 
