@@ -30,7 +30,7 @@
 ### 检验Mac和SN有效性的API交互时序图
 ![节点架构](fig/vendor_device_bind.png)
 
-### 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下(账号: newifi2 密码: 123456)
+### 暂时提供一个统一的账号，所有节点的流量全部统计到这个统一的账号，查询流量API如下
 #### 登录，获取token
 ```  shell
 curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
