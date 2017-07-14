@@ -36,14 +36,14 @@
 curl  -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
       -H "Content-Type:application/json" \
       -d '{
-              "user_name": "newifi2",
-              "password":  "123456"
+              "user_name": "demo",
+              "password":  "demo"
           }'
 
 ```
 #### 获取一定时间段内的流量（包括多个Mac）
 ``` shell
-curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
+curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/{user_id}/traffic?start_date=1494780990&end_date=1495890990" \
     -H "X-Pear-Token: ${token}" \
     -H "Content-Type:application/json" 
 ```
@@ -78,8 +78,8 @@ curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1
 r=`curl -X POST https://api.webrtc.win:7201/v1/vdn/owner/login \
          -H "Content-Type:application/json" \
          -d '{
-                 "user_name": "newifi2",
-                 "password":  "123456"
+                 "user_name": "demo",
+                 "password":  "demo"
             }'`
 user_id=`echo $r | cut -d ":" -f2 | cut -d "," -f1`
 user_id="${user_id// /}"
@@ -128,8 +128,8 @@ files=('/tv/pear.mp4')
 r=`curl -X POST https://api.webrtc.win:6601/v1/customer/login \
         -H "Content-Type:application/json" \
         -d '{
-                "user": "admin",
-                "password":  "123456"
+                "user": "demo",
+                "password":  "demo"
              }'`
 token=`echo $r | cut -d "\"" -f4 `
 echo $token
@@ -150,7 +150,7 @@ exit 0
 #### 通过API查询
 
 ``` shell
-    curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/51/traffic?start_date=1494780990&end_date=1495890990" \
+    curl -v -X GET "https://api.webrtc.win:7201/v1/vdn/owner/{user_id}/traffic?start_date=1494780990&end_date=1495890990" \
          -H "X-Pear-Token: ${token}" \
          -H "Content-Type:application/json" 
 ```
