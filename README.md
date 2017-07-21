@@ -80,4 +80,4 @@
 
 ## <img src="fig/icon/合作.png" width="28"> 商务合作
 
-CP接入，CDN接入或播放器、JS、SDK定制，ISP流量优化，HardwareVendor软件集成等，联系<service@pear.hk>
+CP接入，CDN接入或播放器、JS、SDK定制，ISP流量优化，HardwareVendor软件集成等，联系：`<service@pear.hk>`
