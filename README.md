@@ -77,3 +77,7 @@
    3. 大数据推荐、预测，及内容预取
    
       * 提供API和相关服务，对于有用户画像和资源属性分析能力的CP，内容预取和传播可精确到用户和“小世界”(Small-world)社交网络粒度。
+
+## <img src="fig/icon/合作.png" width="28"> 商务合作
+
+CP接入，CDN接入或播放器、JS、SDK定制，ISP流量优化，HardwareVendor软件集成等，联系<service@pear.hk>
