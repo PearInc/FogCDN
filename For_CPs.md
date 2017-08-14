@@ -8,11 +8,11 @@
 <video id="v1" src="https://xxx.webrtc.win/tv/f.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
-/**
- * 第一个参数为video标签的id或class
- * 第二个参数为获取节点的token
- * opts是可选的参数配置
- */
+   /**
+    * 第一个参数为video标签的id或class
+    * 第二个参数为获取节点的token
+    * opts是可选的参数配置
+    */
     PearPlayer('#v1', token, opts);
 </script>
 ```
