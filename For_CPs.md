@@ -8,7 +8,12 @@
 <video id="v1" src="https://xxx.webrtc.win/tv/f.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
-    PearPlayer('#v1', token);
+/**
+ * 第一个参数为video标签的id或class
+ * 第二个参数为获取节点的token
+ * opts是可选的参数配置
+ */
+    PearPlayer('#v1', token, opts);
 </script>
 ```
 
@@ -18,6 +23,29 @@
 * 默认采用First-aid算法
 
 ![First-aid](fig/firstaid.png)
+
+### 通过token获取节点
+需要向PearPlayer传入token才能获取节点（观看前缀为“Pear-Demo-”的视频不需要token即可自动获取节点），可以通过调用提供的API接口（/v1/customer/login）并传入用户名和密码，
+这里已经为访客提供了测试帐号（用户名：demo　密码：demo），获取token的示例代码如下：
+```js
+var xhr = new XMLHttpRequest();
+xhr.open("POST", 'https://api.webrtc.win:6601/v1/customer/login');
+var data = JSON.stringify({
+    user:'test',
+    password:'123456'
+});
+xhr.onload = function () {
+    if (this.status >= 200 && this.status < 300) {
+        var res = JSON.parse(this.response);
+        if (!!res.token){
+            console.log('token:' +res.token);
+        }
+    } else {
+        alert('请求出错!');
+    }
+};
+xhr.send(data);
+```
 
 ## 移动端的播放器SDK或协议嵌入
 
