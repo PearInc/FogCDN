@@ -5,15 +5,10 @@
 * **内容提供商**可以“一键接入”Pear Fog CDN：
 
 ``` js
-<video id="v1"></video>
+<video id="v1" src="https://xxx.webrtc.win/tv/f.mp4"></video>
 <script src="PearPlayer.js"></script>
 <script>
-    var PearPlayer = require('PearPlayer');
-    PearPlayer('#v1',{
-        type: 'mp4',
-        src: 'https://xxx.webrtc.win/tv/f.mp4',
-        token: token
-    });
+    PearPlayer('#v1', token);
 </script>
 ```
 
