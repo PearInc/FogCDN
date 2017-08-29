@@ -1,8 +1,8 @@
 # FogVDN - The Video CDN in the Fog with Crowdsourcing
 
- FogVDN proposed by Pear, future oriented, focuse on online video streaming service. It is an important component of the Pear Fog. It has the following features:
+ FogVDN proposed by Pear, future oriented, focuse on online video streaming service. It is an important component of the Pear Fog. It has the following features
 
-## <img src="fig/icon/一键接入.png" width="28"> Integrate easily, CP or CDN can  "Click to start"
+## <img src="fig/icon/一键接入.png" width="28"> Integrate Easily, CP or CDN can  "Click to Start"
 
 ``` js
 <video id="v1" src="https://example.com/v1.mp4"></video>
@@ -12,11 +12,11 @@
 </script>
 ```
 
-> Web friendly, uses the open Web standard（No plug in，just need HTML5 and WebRTC）
+> Web friendly, uses the Web open standard (No plug in, just need HTML5 and WebRTC)
 
-> Integrate with your project easily ，only need few JS code.
+> Integrate with your project easily , only need few JS code.
 
-## <img src="fig/icon/海量规模.png" width="28"> Crowdsourcing，Massive node，Wide coverage
+## <img src="fig/icon/海量规模.png" width="28"> Crowdsourcing, Massive node, Wide coverage
 
    - Massive, stable service node.
    - Most bandwidth, storage and computing resources were collected by crowdsourcing from the stabilize online edge devices owned by users.
@@ -58,7 +58,7 @@ Through massive node and dynamic, real-time monitoring and scheduling, data tran
 
    * All edge nodes support TLS, HTTP use HTTPS(HTTP2.0) by default.
    * WebRTC channel tranfer data encoded by SCTP and DTLS.
-   * Signaling communication by WebSocket，also encrypted by TLS/SSL.
+   * Signaling communication by WebSocket, also encrypted by TLS/SSL.
    * Optional data encryption, segmentation, fragmentation and blocking.
 ## <img src="fig/icon/降低成本.png" width="28"> Low cost
 
@@ -67,7 +67,7 @@ Compared to the traditional CDN which relying on expensive servers and bandwidth
 
    1. accurate service
 
-      * Get user's real IP address (although use OpenDNS or VPN), and mapping the area, ISP with a probability of 99.9%, choose the "zero hop" node for service。
+      * Get user's real IP address (although use OpenDNS or VPN), and mapping the area, ISP with a probability of 99.9%, choose the "zero hop" node for service.
 
    2.  Efficient content distribution and distribution network
 
@@ -78,4 +78,4 @@ Compared to the traditional CDN which relying on expensive servers and bandwidth
       * Provide API and other service, for the CP which have user personas and content feature,content prefetching  can be accurate to one user and the "Small-world"(A social networks concept).
 ## <img src="fig/icon/合作.png" width="28"> Business
 
-CP access,CDN access or player,JS,SDK customized,ISP data usage optimize,  Hardware Vendor software integrate. Please send E-mail to <service@pear.hk>
+CP access, CDN access or player, JS, SDK customized, ISP data usage optimize,  Hardware Vendor software integrate. Please send E-mail to <service@pear.hk>
