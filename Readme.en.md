@@ -71,7 +71,7 @@ Compared to the traditional CDN which relying on expensive servers and bandwidth
 
    2. Efficient content distribution and distribution network
 
-      * Accurate, real- time get the high frequency data, push the content to the edge node quickly.
+      * Accurate, real-time get the high frequency data, push the content to the edge node quickly.
 
    3. Big data based recommendation, prediction and  prefetching
 
