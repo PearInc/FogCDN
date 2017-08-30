@@ -37,7 +37,7 @@ Through massive node and dynamic, real-time monitoring and scheduling, data tran
 
   ![multisources](fig/fogvdn_multisources.png)
 
-   2. In service, it will dynamically explore the status and service capabilities of other nodes, automatically switch to the optimal node group and adjust the data ratio to guarantee the user experience.
+   2. It will dynamically explore the status and service capabilities of other nodes, automatically switch to the optimal node group and adjust the data ratio to guarantee the user experience.
 
 ## <img src="fig/icon/iso.png" width="28"> Support International Open Standard Protocol
 
@@ -54,7 +54,7 @@ Through massive node and dynamic, real-time monitoring and scheduling, data tran
 
 ## <img src="fig/icon/安全.png" width="28"> Safe and Reliable
 
-   It supports the secure storage and transmission, prevents the data from being tampered, avoids the leakage of the copyright document and the content hijacking.
+   It ensures the secure storage and transmission, prevents the data from being tampered, avoids the leakage of the copyright document and the content hijacking.
 
    * All edge nodes support TLS, HTTP use HTTPS(HTTP2.0) by default.
    * WebRTC channel tranfer data encoded by SCTP and DTLS.
@@ -65,11 +65,11 @@ Through massive node and dynamic, real-time monitoring and scheduling, data tran
 Compared to the traditional CDN which relying on expensive servers and bandwidth.  Pear FogVDN with massive nodes and sharing economy, the price is lower than traditional CDN.
 ## <img src="fig/icon/地域统计.png" width="28"> Network Awareness, Content Prefetching, Personalization
 
-   1. accurate service
+   1. Accurate service
 
       * Get user's real IP address (although use OpenDNS or VPN), and mapping the area, ISP with a probability of 99.9%, choose the "zero hop" node for service.
 
-   2.  Efficient content distribution and distribution network
+   2. Efficient content distribution and distribution network
 
       * Accurate, real- time get the high frequency data, push the content to the edge node quickly.
 
