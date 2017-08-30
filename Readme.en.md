@@ -16,7 +16,7 @@
 
 > Integrate with your project easily , only need few JS code.
 
-## <img src="fig/icon/海量规模.png" width="28"> Crowdsourcing, Massive node, Wide coverage
+## <img src="fig/icon/海量规模.png" width="28"> Crowdsourcing, Massive Node, Wide Coverage
 
    - Massive, stable service node.
    - Most bandwidth, storage and computing resources were collected by crowdsourcing from the stabilize online edge devices owned by users.
@@ -27,30 +27,30 @@
 
 <img src="fig/devices/PearSharingBox1.jpg" height="90"> <img src="fig/devices/PearSharingBox2.png" height="90"> <img src="fig/devices/QNAP.png" height="90"> <img src="fig/devices/newifi2.png" height="90"> <img src="fig/devices/newifi3.png" height="90">
 
-## <img src="fig/icon/延迟.png" width="28"> Low latency
+## <img src="fig/icon/延迟.png" width="28"> Low Latency
 Through massive node and dynamic, real-time monitoring and scheduling, data transmission distances would be "zero hop".
 
 
-## <img src="fig/icon/多通道.png" width="28"> Multi source, Robustness
+## <img src="fig/icon/多通道.png" width="28"> Multi Source, Robustness
 
-   1. In data transmission, the traditional CDN is one-to-many relationship, that means, the average of the user quality of service is inversely proportional to the number of users. Pear FogVDN schemes to get file data from multi channels, reducing the dependency on a single point or single link, solve the HD video play back problem that the single link may not meet the bandwidth, also solve the problem of weak network packet loss problem through the UDP channel, make users have a better watching experience.
+   1. In data transmission, the traditional CDN is one-to-many relationship, that means, the average of the user quality of service is inversely proportional to the number of users. Pear FogVDN schemes to get file data from multi channels, reducing the dependency on a single point or single link, solve the HD video play back problem that the single link may not meet the bandwidth, also solve the problem of weak network packet loss problem through the UDP channel, users will have a better watching experience.
 
   ![multisources](fig/fogvdn_multisources.png)
 
    2. In service, it will dynamically explore the status and service capabilities of other nodes, automatically switch to the optimal node group and adjust the data ratio to guarantee the user experience.
 
-## <img src="fig/icon/iso.png" width="28"> Support international open standard protocol
+## <img src="fig/icon/iso.png" width="28"> Support International Open Standard Protocol
 
    + [HTTP2](https://en.wikipedia.org/wiki/HTTP/2)
    + [WebRTC](https://webrtc.org/)
    + [HLS](https://developer.apple.com/streaming/)
    + [DASH](http://mpeg.chiariglione.org/standards/mpeg-dash)
 
-## <img src="fig/icon/连接一切.png" width="28"> Web friendly, "Connect the world"
+## <img src="fig/icon/连接一切.png" width="28"> Web Friendly, "Connect the World"
 
 ![播放器](fig/PearPlayer.png)
 
-## <img src="fig/icon/智能算法.png" width="28"> High effciency, Customized algorithm in VoD, Live, VoIP.
+## <img src="fig/icon/智能算法.png" width="28"> High Effciency, Customized Algorithm in VoD, Live, VoIP.
 
 ## <img src="fig/icon/安全.png" width="28"> Safe and Reliable
 
@@ -60,10 +60,10 @@ Through massive node and dynamic, real-time monitoring and scheduling, data tran
    * WebRTC channel tranfer data encoded by SCTP and DTLS.
    * Signaling communication by WebSocket, also encrypted by TLS/SSL.
    * Optional data encryption, segmentation, fragmentation and blocking.
-## <img src="fig/icon/降低成本.png" width="28"> Low cost
+## <img src="fig/icon/降低成本.png" width="28"> Low Cost
 
 Compared to the traditional CDN which relying on expensive servers and bandwidth.  Pear FogVDN with massive nodes and sharing economy, the price is lower than traditional CDN.
-## <img src="fig/icon/地域统计.png" width="28"> Network awareness, Content prefetching, Personalization
+## <img src="fig/icon/地域统计.png" width="28"> Network Awareness, Content Prefetching, Personalization
 
    1. accurate service
 
