@@ -1,4 +1,4 @@
-# FogVDN - The Video CDN in the Fog with Crowdsourcing
+# FogCDN - The CDN in the Fog with Crowdsourcing
 
   Pear（梨享）出品的一个面向未来、专注于服务在线视频流媒体的CDN。它是Pear Fog（梨享雾计算）平台的重要组成部分，具有以下特色：
 
@@ -12,7 +12,7 @@
 </script>
 ```
 
-> FogVDN是Web友好的，使用开放的Web标准（不需要任何额外插件，只需要HTML5和WebRTC）
+> FogCDN是Web友好的，使用开放的Web标准（不需要任何额外插件，只需要HTML5和WebRTC）
 > 非常容易集成到现有项目中，只需几行JS代码便可以集成
 
 ## <img src="fig/icon/海量规模.png" width="28"> 众包，海量节点，广覆盖
@@ -32,7 +32,7 @@
 
 ## <img src="fig/icon/多通道.png" width="28"> 多源，鲁棒
 
-   1. 在数据传输上，传统CDN是一对多的，即用户平均服务质量和用户数呈“逆线性关系”。Pear FogVDN采取从多源多通道获取文件数据的方案，减少了对单点和单链路的依赖，解决了播放高清视频而单链路无法满足此带宽出现的卡顿问题，通过UDP通道也解决弱网环境丢包的问题，让用户获得更佳的观看体验。
+   1. 在数据传输上，传统CDN是一对多的，即用户平均服务质量和用户数呈“逆线性关系”。Pear FogCDN采取从多源多通道获取文件数据的方案，减少了对单点和单链路的依赖，解决了播放高清视频而单链路无法满足此带宽出现的卡顿问题，通过UDP通道也解决弱网环境丢包的问题，让用户获得更佳的观看体验。
 
   ![multisources](fig/fogvdn_multisources.png)
   
