@@ -62,7 +62,7 @@
 
 ## <img src="fig/icon/降低成本.png" width="28"> 低成本
 
-   相对于传统CDN依赖于昂贵的机房、服务器和租赁带宽，Pear FogVDN凭借海量的节点和共享经济的模式，价格相比传统CDN显著降低。
+   相对于传统CDN依赖于昂贵的机房、服务器和租赁带宽，Pear FogCDN凭借海量的节点和共享经济的模式，价格相比传统CDN显著降低。
 
 ## <img src="fig/icon/地域统计.png" width="28"> 网络感知、内容感知、用户感知
 
